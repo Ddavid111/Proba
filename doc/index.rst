@@ -1,17 +1,23 @@
-.. this is a comment, it is not rendered
-   when adding new *.rst files, reference them here
-   in this index.rst for them to be rendered and added to the
-   table of contents
+.. Documentation documentation master file, created by
+   sphinx-quickstart on Wed Jul  5 10:25:51 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-
-Basics
-==========
+Szakmai Gyakorlat
+=========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 6
+   :caption: Contents:
 
-   purpose.rst
-   dependencies.rst
-   usage.rst
-   credit.rst
-   exercises.rst
+   chapters/01
+   chapters/Tervezes
+   chapters/02
+   chapters/Hasznalati_esetek
+   chapters/Lapok_reszletezese
+   chapters/Lapok_kozotti_atmenetek
+   chapters/Adatmodell
+   chapters/Classdiagram
+   chapters/Planning
+   chapters/CRUD
+   chapters/jUnit-os tesztek felsorolása
