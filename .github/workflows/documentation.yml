@@ -17,7 +17,7 @@ jobs:
       - name: Deploy
         run: |
           pip install sphinx-plantuml
-      -name: Plantuml
+      - name: Plantuml
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         with:
