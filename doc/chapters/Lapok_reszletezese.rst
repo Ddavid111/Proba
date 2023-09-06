@@ -153,20 +153,20 @@ Az *Elnök* itt hozhatja létre a záróvizsgát.
 Záróvizsga jegyzőkönyv szerkesztése (ZV_Report)
 -----------------------------------------------
 
-.. image:: images/Web_pages/ZV_Report1.png
+.. image:: images/Web_pages/Zv_Report1.png
 
-.. image:: images/Web_pages/ZV_Report2.png
+.. image:: images/Web_pages/Zv_Report2.png
 
-.. image:: images/Web_pages/ZV_Report3.png
+.. image:: images/Web_pages/Zv_Report3.png
 
-.. image:: images/Web_pages/ZV_Report4.png
+.. image:: images/Web_pages/Zv_Report4.png
 
 A záróvizsga jegyzőkönyv szerkesztése látható itt. Pirossal azok a részek vannak kiemelve, amelyeket módosítani lehet.
 
 Záróvizsga jegyek rögzítése és Záróvizsga jegyzőkönyv letöltése (ZV_Status)
 ---------------------------------------------------------------------------
 
-.. image:: images/Web_pages/ZV_Status.png
+.. image:: images/Web_pages/Zv_Status.png
 
 - A *Jegyző* az *Elnök* és a *Témavezető* itt rögzítheti a Záróvizsgán kapott érdemjegyeket.
 
