@@ -154,8 +154,11 @@ Záróvizsga jegyzőkönyv szerkesztése (ZV_Report)
 -----------------------------------------------
 
 .. image:: images/Web_pages/ZV_Report1.png
+
 .. image:: images/Web_pages/ZV_Report2.png
+
 .. image:: images/Web_pages/ZV_Report3.png
+
 .. image:: images/Web_pages/ZV_Report4.png
 
 A záróvizsga jegyzőkönyv szerkesztése látható itt. Pirossal azok a részek vannak kiemelve, amelyeket módosítani lehet.
