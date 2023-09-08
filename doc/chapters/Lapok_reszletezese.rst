@@ -63,6 +63,11 @@ Az Elküld gomb megnyomása után az alábbi üzenetek egyike jelenik meg.
 
 Sikeres e-mail küldés után a szövegbeviteli mező és a gomb eltűnik.
 
+Hallgatók felvitele (Enrollment_of_students)
+--------------------------------------------
+
+.. image:: images/Web_pages/Enrollment_of_students.png
+
 Szakdolgozatok listázása (Thesis_List)
 --------------------------------------
 
@@ -150,14 +155,26 @@ Záróvizsga létrehozása (ZV_Create)
 
 Az *Elnök* itt hozhatja létre a záróvizsgát.
 
-Záróvizsga jegyzőkönyv szerkesztése (ZV_Report)
------------------------------------------------
+Záróvizsga jegyzőkönyv szerkesztése (ZV_Report1,ZV_Report2,ZV_Report3,ZV_Report4)
+---------------------------------------------------------------------------------
+
+Első lap
+^^^^^^^^
 
 .. image:: images/Web_pages/Zv_Report1.png
 
+Második lap
+^^^^^^^^^^^
+
 .. image:: images/Web_pages/Zv_Report2.png
 
+Harmadik lap
+^^^^^^^^^^^^
+
 .. image:: images/Web_pages/Zv_Report3.png
+
+Negyedik lap
+^^^^^^^^^^^^
 
 .. image:: images/Web_pages/Zv_Report4.png
 
