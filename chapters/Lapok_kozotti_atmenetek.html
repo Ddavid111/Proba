@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lapok közötti átmenetek &mdash; Szakmai Gyakorlat 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Adatmodell" href="Adatmodell.html" />
+    <link rel="prev" title="Lapok részletezése" href="Lapok_reszletezese.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Szakmai Gyakorlat
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01.html">1. hét</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tervezes.html">Tervezés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02.html">Szerepkörök leírása és Folyamatok ábrázolása</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hasznalati_esetek.html">Használati esetek</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lapok_reszletezese.html">Lapok részletezése</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lapok közötti átmenetek</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#elnok">Elnök</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biralo">Bíráló</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jegyzo">Jegyző</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#temavezeto">Témavezető</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hallgato">Hallgató</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Adatmodell.html">Adatmodell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classdiagram.html">Osztálydiagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Planning.html">Fejlesztési lépések</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CRUD.html">CRUD tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jUnit-os%20tesztek%20felsorol%C3%A1sa.html">jUnit-os tesztek felsorolása</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Szakmai Gyakorlat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Lapok közötti átmenetek</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapters/Lapok_kozotti_atmenetek.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="lapok-kozotti-atmenetek">
+<h1>Lapok közötti átmenetek<a class="headerlink" href="#lapok-kozotti-atmenetek" title="Permalink to this headline"></a></h1>
+<section id="elnok">
+<h2>Elnök<a class="headerlink" href="#elnok" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Elnok.png" src="../_images/Elnok.png" />
+<p><strong>Leírás</strong></p>
+<p>A fenti ábrán az <em>Elnök</em> szemszögéből láthatjuk a rendszert.</p>
+<ul class="simple">
+<li><p>Lehetősége van <em>Regisztrálni</em>, <em>Bejelentkezni</em>, és <em>Elfejtett jelszót</em> kérni.</p></li>
+<li><p>A bejelentkezés után rögtön a főoldalra jut a felhasználó.</p></li>
+<li><p>Innen lehetősége van megtekinteni a <em>Saját profilját</em> és ezen belül a <em>Biztonság</em> menüpontot, ahol a jelszót tudja megváltoztatni.</p></li>
+<li><p>Ezenkívül hozzáférése lehet a <em>Szakdolgozatok listázásához</em> is amin belül az egyes <em>Szakdolgozatok részleteit</em> is megjelenítheti a felhasználó.</p></li>
+<li><p>Lehetősége van <em>Záróvizsgát létrehozni</em>, a <em>Záróvizsgán kapott jegyeket</em> elkönyvelni illetve a <em>Záróvizsga jegyzőkönyvének letöltésére</em> is.</p></li>
+<li><p>Megtekintheti a <em>Szakdolgozatok státuszát</em>, a <em>Bírálatokat</em> és a <em>Történetisgéet leíró lapot</em> is.</p></li>
+</ul>
+</section>
+<section id="biralo">
+<h2>Bíráló<a class="headerlink" href="#biralo" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Biralo.png" src="../_images/Biralo.png" />
+<p><strong>Leírás</strong></p>
+<p>A fenti ábrán a <em>Bíráló</em> szemszögéből láthatjuk a rendszert.</p>
+<p>-L ehetősége van <em>Regisztrálni</em>, <em>Bejelentkezni</em>, és <em>Elfejtett jelszót</em> kérni.
+- A bejelentkezés után rögtön a főoldalra jut a felhasználó.
+- Innen lehetősége van megtekinteni a <em>Saját profilját</em> és ezen belül a <em>Biztonság</em> menüpontot, ahol a jelszót tudja megváltoztatni.
+- Ezenkívül hozzáférése lehet a <em>Szakdolgozatok listázásához</em> is amin belül az egyes <em>Szakdolgozatok részleteit</em> is megjelenítheti a felhasználó.
+- Megtekintheti a <em>Szakdolgozatok státuszát</em> és a <em>Történetiséget leíró lapot</em> is. Valamint bírálatot írhat a <em>Szakdolgozat Bírálat</em> lapon.</p>
+</section>
+<section id="jegyzo">
+<h2>Jegyző<a class="headerlink" href="#jegyzo" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Jegyzo.png" src="../_images/Jegyzo.png" />
+<p><strong>Leírás</strong></p>
+<p>A fenti ábrán a <em>Jegyző</em> szemszögéből láthatjuk a rendszert.</p>
+<ul class="simple">
+<li><p>Lehetősége van <em>Regisztrálni</em>, <em>Bejelentkezni</em>, és <em>Elfejtett jelszót</em> kérni.</p></li>
+<li><p>A bejelentkezés után rögtön a főoldalra jut a felhasználó.</p></li>
+<li><p>Innen lehetősége van megtekinteni a <em>Saját profilját</em> és ezen belül a <em>Biztonság</em> menüpontot, ahol a jelszót tudja megváltoztatni.</p></li>
+<li><p>Ezenkívül hozzáférése lehet a <em>Szakdolgozatok listázásához</em> is, amin belül az egyes <em>Szakdolgozatok részleteit</em> is megjelenítheti a felhasználó.</p></li>
+<li><p>Megtekintheti a <em>Szakdolgozatok státuszát</em> és a <em>Történetiséget leíró lapot</em> is.</p></li>
+<li><p>Lehetősége van a <em>Záróvizsgán kapott jegyek</em> rögzítésére illetve a <em>Záróvizsga jegyzőkönyv</em> letöltésére.</p></li>
+</ul>
+</section>
+<section id="temavezeto">
+<h2>Témavezető<a class="headerlink" href="#temavezeto" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Temavezeto.png" src="../_images/Temavezeto.png" />
+<p><strong>Leírás</strong></p>
+<p>A fenti ábrán a <em>Témavezető</em> szemszögéből láthatjuk a rendszert.</p>
+<ul class="simple">
+<li><p>Lehetősége van <em>Regisztrálni</em>, <em>Bejelentkezni</em>, és <em>Elfejtett jelszót</em> kérni.</p></li>
+<li><p>A bejelentkezés után rögtön a főoldalra jut a felhasználó.</p></li>
+<li><p>Innen lehetősége van megtekinteni a <em>Saját profilját</em> és ezen belül a <em>Biztonság</em> menüpontot, ahol a jelszót tudja megváltoztatni.</p></li>
+<li><p>Ezenkívül hozzáférése lehet a <em>Szakdolgozatok listázásához</em> is, amin belül az egyes <em>Szakdolgozatok részleteit</em> is megjelenítheti a felhasználó.</p></li>
+<li><p>Megtekintheti a <em>Szakdolgozatok státuszát</em> a <em>Bírálatot</em>, és a <em>Történetiséget leíró lapot</em> is.</p></li>
+<li><p>Lehetősége van a <em>Záróvizsgán kapott jegyek</em> rögzítésére illetve a <em>Záróvizsga jegyzőkönyv</em> letöltésére.</p></li>
+</ul>
+</section>
+<section id="hallgato">
+<h2>Hallgató<a class="headerlink" href="#hallgato" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Hallgato.png" src="../_images/Hallgato.png" />
+<p><strong>Leírás</strong></p>
+<p>A fenti ábrán a <em>Hallgató</em> szemszögéből láthatjuk a rendszert.</p>
+<ul class="simple">
+<li><p>Lehetősége van <em>Regisztrálni</em>, <em>Bejelentkezni</em>, és <em>Elfejtett jelszót</em> kérni.</p></li>
+<li><p>A bejelentkezés után rögtön a főoldalra jut a felhasználó.</p></li>
+<li><p>Innen lehetősége van megtekinteni a <em>Saját profilját</em> és ezen belül a <em>Biztonság</em> menüpontot, ahol a jelszót tudja megváltoztatni.</p></li>
+<li><p>Ezenkívül hozzáférése lehet a <em>Szakdolgozatok listázásához</em> is, amin belül az egyes <em>Szakdolgozatok részleteit</em> is megjelenítheti a felhasználó.</p></li>
+<li><p>Megtekintheti a <em>Történetiséget leíró lapot</em> is.</p></li>
+<li><p>Lehetősége van a <em>Szakdolgozat feltöltésére</em>, ami különböző fázisokból áll kezdve az <em>Alapadatok</em> megadásától a <em>PDF felöltésen</em> át az <em>Előnézetig</em>.</p></li>
+<li><p>A Záróvizsgára készült <em>prezentációt</em> is lehetősége van egy külön lapon feltölteni.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Lapok_reszletezese.html" class="btn btn-neutral float-left" title="Lapok részletezése" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Adatmodell.html" class="btn btn-neutral float-right" title="Adatmodell" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Dávid Drig.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jUnit-os tesztek felsorolása &mdash; Szakmai Gyakorlat 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="CRUD tests" href="CRUD.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Szakmai Gyakorlat
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01.html">1. hét</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tervezes.html">Tervezés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02.html">Szerepkörök leírása és Folyamatok ábrázolása</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hasznalati_esetek.html">Használati esetek</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lapok_reszletezese.html">Lapok részletezése</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lapok_kozotti_atmenetek.html">Lapok közötti átmenetek</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Adatmodell.html">Adatmodell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classdiagram.html">Osztálydiagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Planning.html">Fejlesztési lépések</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CRUD.html">CRUD tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">jUnit-os tesztek felsorolása</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#theses-eseten">Theses esetén:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#users-eseten">Users esetén:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-roles-eseten">User_roles esetén:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#titles-eseten">Titles esetén:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reviews-eseten">Reviews esetén:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#semesters-eseten">Semesters esetén:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#files-eseten">Files esetén:</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Szakmai Gyakorlat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">jUnit-os tesztek felsorolása</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapters/jUnit-os tesztek felsorolása.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="junit-os-tesztek-felsorolasa">
+<h1>jUnit-os tesztek felsorolása<a class="headerlink" href="#junit-os-tesztek-felsorolasa" title="Permalink to this headline"></a></h1>
+<section id="theses-eseten">
+<h2>Theses esetén:<a class="headerlink" href="#theses-eseten" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>testCreateTheses_succesful()</p></li>
+<li><p>testCreateTheses_invalidSemesterId()</p></li>
+<li><p>testCreateTheses_invalidStudentId()</p></li>
+<li><p>testCreateTheses_invalidSupervisorId()</p></li>
+<li><p>testCreateTheses_missingTitle()</p></li>
+<li><p>testCreateTheses_missingFaculty()</p></li>
+<li><p>testCreateTheses_missingDepartment()</p></li>
+<li><p>testCreateTheses_missingSpeciality()</p></li>
+<li><p>testCreateTheses_missingLanguage()</p></li>
+<li><p>testCreateTheses_invalidThesisPdfId()</p></li>
+<li><p>testCreateTheses_invalidSupplementId()</p></li>
+<li><p>testCreateTheses_defenseScore()</p></li>
+<li><p>testCreateTheses_subjectScore()</p></li>
+<li><p>testCreateTheses_finalScore()</p></li>
+<li><p>testGetThesesById_successful()</p></li>
+<li><p>testGetThesesById_invalidId()</p></li>
+<li><p>testUpdateTheses_succesful()</p></li>
+<li><p>testUpdateTheses_invalidId()</p></li>
+<li><p>testUpdateTheses_invalidSemesterId()</p></li>
+<li><p>testUpdateTheses_invalidStudentId()</p></li>
+<li><p>testUpdateTheses_invalidSupervisorId()</p></li>
+<li><p>testUpdateTheses_missingTitle()</p></li>
+<li><p>testUpdateTheses_missingFaculty()</p></li>
+<li><p>testUpdateTheses_missingDepartment()</p></li>
+<li><p>testUpdateTheses_missingSpeciality()</p></li>
+<li><p>testUpdateTheses_missingLanguage()</p></li>
+<li><p>testUpdateTheses_invalidThesisPdfId()</p></li>
+<li><p>testUpdateTheses_invalidSupplementId()</p></li>
+<li><p>testUpdateTheses_defenseScore()</p></li>
+<li><p>testUpdateTheses_subjectScore()</p></li>
+<li><p>testUpdateTheses_finalScore()</p></li>
+<li><p>testRemoveTheses_succesful()</p></li>
+<li><p>testRemoveTheses_invalidId()</p></li>
+</ul>
+</section>
+<section id="users-eseten">
+<h2>Users esetén:<a class="headerlink" href="#users-eseten" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>testCreateUsers_succesful()</p></li>
+<li><p>testCreateUsers_missingEmail()</p></li>
+<li><p>testCreateUsers_missingPassword()</p></li>
+<li><p>testCreateUsers_invalidTitle()</p></li>
+<li><p>testCreateUsers_missingFirstName()</p></li>
+<li><p>testCreateUsers_missingFamilyName()</p></li>
+<li><p>testGetUsersById_successful()</p></li>
+<li><p>testGetUsersById_invalidId()</p></li>
+<li><p>testRegister_Successful()</p></li>
+<li><p>testRegister_MissingData()</p></li>
+<li><p>testRegister_ExistingEmail()</p></li>
+<li><p>testRegister_WeakPassword()</p></li>
+<li><p>testUpdateUsers_succesful ()</p></li>
+<li><p>testUpdateUsers_invalidId()</p></li>
+<li><p>testUpdateUsers_missingEmail()</p></li>
+<li><p>testUpdateUsers_missingPassword()</p></li>
+<li><p>testUpdateUsers_invalidTitle()</p></li>
+<li><p>testUpdateUsers_missingFirstName()</p></li>
+<li><p>testUpdateUsers_missingFamilyName()</p></li>
+<li><p>testRemoveUsers_succesful()</p></li>
+<li><p>testRemoveUsers_invalidId()</p></li>
+</ul>
+</section>
+<section id="user-roles-eseten">
+<h2>User_roles esetén:<a class="headerlink" href="#user-roles-eseten" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>testCreateUserRoles_succesful()</p></li>
+<li><p>testCreateUserRoles_missingRole()</p></li>
+<li><p>test_getUserRolesById_successful()</p></li>
+<li><p>test_getUserRolesById_invalidId()</p></li>
+<li><p>testUpdateUserRoles_succesful()</p></li>
+<li><p>test_updateUserRoles_invalidId()</p></li>
+<li><p>testUpdateUserRoles_missingRole()</p></li>
+<li><p>testRemoveUserRoles_succesful()</p></li>
+<li><p>testRemoveUserRoles_invalidId()</p></li>
+</ul>
+</section>
+<section id="titles-eseten">
+<h2>Titles esetén:<a class="headerlink" href="#titles-eseten" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>testCreateTitles_succesful()</p></li>
+<li><p>testCreateTitles_missingName()</p></li>
+<li><p>testGetTitlesById_successful()</p></li>
+<li><p>testGetTitlesById_invalidId()</p></li>
+<li><p>testUpdateTitles_succesful()</p></li>
+<li><p>testUpdateTitles_invalidId()</p></li>
+<li><p>testUpdateTitles_missingName()</p></li>
+<li><p>testRemoveTitles_succesful()</p></li>
+<li><p>testRemoveTitles_invalidId()</p></li>
+</ul>
+</section>
+<section id="reviews-eseten">
+<h2>Reviews esetén:<a class="headerlink" href="#reviews-eseten" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>testCreateReviews_succesful()</p></li>
+<li><p>testCreateReviews_invalidReviewerId()</p></li>
+<li><p>testCreateReviews_invalidThesisId()</p></li>
+<li><p>testCreateReviews_invalidScore()</p></li>
+<li><p>testCreateReviews_missingDescription()</p></li>
+<li><p>testCreateReviews_missingCity()</p></li>
+<li><p>testGetReviewsById_successful()</p></li>
+<li><p>testGetReviewsById_invalidId()</p></li>
+<li><p>testUpdateReviews_succesful()</p></li>
+<li><p>testUpdateReviews_invalidId()</p></li>
+<li><p>testUpdateReviews_invalidReviewerId()</p></li>
+<li><p>testUpdateReviews_invalidThesisId()</p></li>
+<li><p>testUpdateReviews_invalidScore()</p></li>
+<li><p>testUpdateReviews_missingDescription()</p></li>
+<li><p>testUpdateReviews_missingCity()</p></li>
+<li><p>testRemoveReviews_succesful()</p></li>
+<li><p>testRemoveReviews_invalidId()</p></li>
+</ul>
+</section>
+<section id="semesters-eseten">
+<h2>Semesters esetén:<a class="headerlink" href="#semesters-eseten" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>testCreateSemesters_succesful()</p></li>
+<li><p>testCreateSemesters_invalidYear()</p></li>
+<li><p>testCreateSemesters_invalidMonth()</p></li>
+<li><p>testCreateSemesters_missingLocation()</p></li>
+<li><p>testGetSemestersById_successful()</p></li>
+<li><p>testGetSemestersById_invalidId()</p></li>
+<li><p>testUpdateSemesters_succesful()</p></li>
+<li><p>testUpdateSemesters_invalidId</p></li>
+<li><p>testUpdateSemesters_invalidYear()</p></li>
+<li><p>testUpdateSemesters_invalidMonth()</p></li>
+<li><p>testUpdateSemesters_missingLocation()</p></li>
+<li><p>testRemoveSemesters_succesful()</p></li>
+<li><p>testRemoveSemesters_invalidId()</p></li>
+</ul>
+</section>
+<section id="files-eseten">
+<h2>Files esetén:<a class="headerlink" href="#files-eseten" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>testCreateFiles_succesful()</p></li>
+<li><p>testCreateFiles_missingName()</p></li>
+<li><p>testGetFilesById_succesful()</p></li>
+<li><p>testGetFilesById_invalidId()</p></li>
+<li><p>testUpdateFiles_succesful()</p></li>
+<li><p>testUpdateFiles_invalidId()</p></li>
+<li><p>testUpdateFiles_missingName()</p></li>
+<li><p>testRemoveFiles_succesful()</p></li>
+<li><p>testRemoveFiles_invalidId()</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="CRUD.html" class="btn btn-neutral float-left" title="CRUD tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Dávid Drig.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

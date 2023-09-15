@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lapok részletezése &mdash; Szakmai Gyakorlat 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lapok közötti átmenetek" href="Lapok_kozotti_atmenetek.html" />
+    <link rel="prev" title="Használati esetek" href="Hasznalati_esetek.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Szakmai Gyakorlat
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01.html">1. hét</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tervezes.html">Tervezés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02.html">Szerepkörök leírása és Folyamatok ábrázolása</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hasznalati_esetek.html">Használati esetek</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lapok részletezése</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bejelentkezes-login">Bejelentkezés (Login)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regisztracio-registration">Regisztráció (Registration)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#elfelejtett-jelszo-forgotten-password">Elfelejtett jelszó (Forgotten_Password)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hallgatok-felvitele-enrollment-of-students">Hallgatók felvitele (Enrollment_of_students)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#szakdolgozatok-listazasa-thesis-list">Szakdolgozatok listázása (Thesis_List)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#szakdolgozat-reszletei-thesis-details">Szakdolgozat részletei (Thesis_Details)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#szakdolgozat-feltoltese">Szakdolgozat feltöltése</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#alapadatok-title-settings">Alapadatok (Title_Settings)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pdf-feltoltes-pdf-upload">PDF Feltöltés (PDF_Upload)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#elonezet-preview">Előnézet (Preview)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sikeres-feltoltes-completed">Sikeres feltöltés (Completed)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#szakdolgozatok-statusza-thesis-status">Szakdolgozatok státusza (Thesis_Status)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#szakdolgozat-biralat-thesis-review">Szakdolgozat Bírálat (Thesis_Review)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biralatok-statusza-report-status">Bírálatok státusza (Report_Status)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zarovizsga-letrehozasa-zv-create">Záróvizsga létrehozása (ZV_Create)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zarovizsga-jegyzokonyv-szerkesztese-zv-report1-zv-report2-zv-report3-zv-report4">Záróvizsga jegyzőkönyv szerkesztése (ZV_Report1,ZV_Report2,ZV_Report3,ZV_Report4)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#elso-lap">Első lap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#masodik-lap">Második lap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#harmadik-lap">Harmadik lap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#negyedik-lap">Negyedik lap</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#zarovizsga-jegyek-rogzitese-es-zarovizsga-jegyzokonyv-letoltese-zv-status">Záróvizsga jegyek rögzítése és Záróvizsga jegyzőkönyv letöltése (ZV_Status)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sajat-profil-hallgato-my-profile-student">Saját profil [Hallgató] (My_Profile_Student)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sajat-profil-a-tobbi-szerepkorre-my-profile">Saját profil [A többi szerepkörre] (My_Profile)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biztonsag-security">Biztonság (Security)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tortenetiseget-leiro-lap-hallgato-history-student">Történetiséget leíró lap [Hallgató] (History_Student)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tortenetiseget-leiro-lap-tobbi-szerepkor-history">Történetiséget leíró lap [Többi szerepkör] (History)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prezentacio-feltoltes-presentation-upload">Prezentáció feltöltés (Presentation_Upload)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#felhasznaloi-adatok-modositasa">Felhasználói adatok módosítása</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Lapok_kozotti_atmenetek.html">Lapok közötti átmenetek</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Adatmodell.html">Adatmodell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classdiagram.html">Osztálydiagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Planning.html">Fejlesztési lépések</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CRUD.html">CRUD tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jUnit-os%20tesztek%20felsorol%C3%A1sa.html">jUnit-os tesztek felsorolása</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Szakmai Gyakorlat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Lapok részletezése</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapters/Lapok_reszletezese.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="lapok-reszletezese">
+<h1>Lapok részletezése<a class="headerlink" href="#lapok-reszletezese" title="Permalink to this headline"></a></h1>
+<section id="bejelentkezes-login">
+<h2>Bejelentkezés (Login)<a class="headerlink" href="#bejelentkezes-login" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Login.jpg" src="../_images/Login.jpg" />
+<ul class="simple">
+<li><p>A hibamező a hiányzó e-mail címet és/vagy jelszót jelzi.</p></li>
+<li><p>A hibaüzenet egy bejelentkezési próba után jelenik meg, amikor az e-mail-jelszó pár érvénytelen.</p></li>
+</ul>
+<p>Lehetséges hibaüzenetek:</p>
+<ul class="simple">
+<li><p>Az e-mail cím hiányzik!</p></li>
+<li><p>Hiányzik a jelszó!</p></li>
+<li><p>Az e-mail cím vagy a jelszó érvénytelen!</p></li>
+</ul>
+<p>Sikeres bejelentkezés után megnyílik a felhasználó irányítópult-oldala.</p>
+</section>
+<section id="regisztracio-registration">
+<h2>Regisztráció (Registration)<a class="headerlink" href="#regisztracio-registration" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Registration.jpg" src="../_images/Registration.jpg" />
+<ul class="simple">
+<li><p>A cím kivételével minden mező kitöltése kötelező.</p></li>
+<li><p>Hibaüzenet jelenik meg minden érvénytelen adatnál (a regisztrációs próba után).</p></li>
+<li><p>A helyreállítási link akkor jelenik meg, ha az e-mail cím már létezik.</p></li>
+</ul>
+<p>Lehetséges hibaüzenetek:</p>
+<ul class="simple">
+<li><p>A keresztnév hiányzik!</p></li>
+<li><p>A családnév hiányzik!</p></li>
+<li><p>Az e-mail cím hiányzik!</p></li>
+<li><p>Az e-mail cím formátuma érvénytelen!</p></li>
+<li><p>A megadott e-mail cím már használatban van!</p></li>
+<li><p>A feltételek elfogadása nélkül nem regisztrálhat!</p></li>
+</ul>
+<p>Sikeres regisztráció után megnyílik a felhasználó irányítópult-oldala.</p>
+</section>
+<section id="elfelejtett-jelszo-forgotten-password">
+<h2>Elfelejtett jelszó (Forgotten_Password)<a class="headerlink" href="#elfelejtett-jelszo-forgotten-password" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Forgotten_Password.jpg" src="../_images/Forgotten_Password.jpg" />
+<p>Az Elküld gomb megnyomása után az alábbi üzenetek egyike jelenik meg.</p>
+<ul class="simple">
+<li><p>Egy e-mailt küldtünk a <a class="reference external" href="mailto:sample&#37;&#52;&#48;address&#46;com">sample<span>&#64;</span>address<span>&#46;</span>com</a> e-mail címre.</p></li>
+<li><p>Az e-mail cím formátuma érvénytelen!</p></li>
+<li><p>A <a class="reference external" href="mailto:sample&#37;&#52;&#48;address&#46;com">sample<span>&#64;</span>address<span>&#46;</span>com</a> e-mail cím nincs regisztrálva a Szerkesztői rendszerben.</p></li>
+<li><p>Hiba történt, miközben a rendszer megpróbálta elküldeni az e-mailt. Kérjük, próbálja újra később.</p></li>
+</ul>
+<p>Sikeres e-mail küldés után a szövegbeviteli mező és a gomb eltűnik.</p>
+</section>
+<section id="hallgatok-felvitele-enrollment-of-students">
+<h2>Hallgatók felvitele (Enrollment_of_students)<a class="headerlink" href="#hallgatok-felvitele-enrollment-of-students" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Enrollment_of_students.png" src="../_images/Enrollment_of_students.png" />
+</section>
+<section id="szakdolgozatok-listazasa-thesis-list">
+<h2>Szakdolgozatok listázása (Thesis_List)<a class="headerlink" href="#szakdolgozatok-listazasa-thesis-list" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Thesis_List.jpg" src="../_images/Thesis_List.jpg" />
+<p>A weblap a szakdolgozatok listázását mutatja.</p>
+<ul class="simple">
+<li><p>A hiba üzenet akkor jelenik meg ha a felhaszáló nem ad meg adatot illetve ha a felhasználó téves adatokat ad meg.</p></li>
+</ul>
+<section id="szakdolgozat-reszletei-thesis-details">
+<h3>Szakdolgozat részletei (Thesis_Details)<a class="headerlink" href="#szakdolgozat-reszletei-thesis-details" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Thesis_Details.jpg" src="../_images/Thesis_Details.jpg" />
+<p>A weblap egy adott szakdolgozat részleteit jeleníti meg. A lapot a <em>Szakdolgozatok listázása</em> lapból érhetjük el.</p>
+</section>
+</section>
+<section id="szakdolgozat-feltoltese">
+<h2>Szakdolgozat feltöltése<a class="headerlink" href="#szakdolgozat-feltoltese" title="Permalink to this headline"></a></h2>
+<p>A folyamat több lapból áll melyek átsegítik a felhasználót a szakdolgozat feltöltésében.</p>
+<section id="alapadatok-title-settings">
+<h3>Alapadatok (Title_Settings)<a class="headerlink" href="#alapadatok-title-settings" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Title_Settings.png" src="../_images/Title_Settings.png" />
+<p>Lehetséges hibaüzenetek:</p>
+<ul class="simple">
+<li><p>Nem töltöttél ki minden fontosabb mezőt.</p></li>
+<li><p>Mielőtt tovább lépsz kérlek mentsd az oldalt.</p></li>
+</ul>
+</section>
+<section id="pdf-feltoltes-pdf-upload">
+<h3>PDF Feltöltés (PDF_Upload)<a class="headerlink" href="#pdf-feltoltes-pdf-upload" title="Permalink to this headline"></a></h3>
+<img alt="../_images/PDF_Upload.jpg" src="../_images/PDF_Upload.jpg" />
+<p>Lehetséges hibaüzenetek:</p>
+<ul class="simple">
+<li><p>A fájl mérete túl nagy</p></li>
+<li><p>A fájl nem a megfelelő formátumban van</p></li>
+</ul>
+</section>
+<section id="elonezet-preview">
+<h3>Előnézet (Preview)<a class="headerlink" href="#elonezet-preview" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Preview.jpg" src="../_images/Preview.jpg" />
+</section>
+<section id="sikeres-feltoltes-completed">
+<h3>Sikeres feltöltés (Completed)<a class="headerlink" href="#sikeres-feltoltes-completed" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Completed.jpg" src="../_images/Completed.jpg" />
+<p>Megtörtént a szakdolgozat sikeres feltöltése.</p>
+</section>
+</section>
+<section id="szakdolgozatok-statusza-thesis-status">
+<h2>Szakdolgozatok státusza (Thesis_Status)<a class="headerlink" href="#szakdolgozatok-statusza-thesis-status" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Thesis_Status.jpg" src="../_images/Thesis_Status.jpg" />
+<p>A szakdolgozatok státuszáról egy összefoglaló táblázat látható.</p>
+<p>Lehetséges hibaüzenetek:</p>
+<ul class="simple">
+<li><p>Nem adtál meg adatot</p></li>
+<li><p>Nincs találat</p></li>
+</ul>
+</section>
+<section id="szakdolgozat-biralat-thesis-review">
+<h2>Szakdolgozat Bírálat (Thesis_Review)<a class="headerlink" href="#szakdolgozat-biralat-thesis-review" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Thesis_Review.jpg" src="../_images/Thesis_Review.jpg" />
+<p>A <em>Témavezető</em> és a <em>Bíráló</em> itt írhatja meg a bírálatot.</p>
+</section>
+<section id="biralatok-statusza-report-status">
+<h2>Bírálatok státusza (Report_Status)<a class="headerlink" href="#biralatok-statusza-report-status" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Report_Status.jpg" src="../_images/Report_Status.jpg" />
+</section>
+<section id="zarovizsga-letrehozasa-zv-create">
+<h2>Záróvizsga létrehozása (ZV_Create)<a class="headerlink" href="#zarovizsga-letrehozasa-zv-create" title="Permalink to this headline"></a></h2>
+<img alt="../_images/ZV_Create.jpg" src="../_images/ZV_Create.jpg" />
+<p>Az <em>Elnök</em> itt hozhatja létre a záróvizsgát.</p>
+</section>
+<section id="zarovizsga-jegyzokonyv-szerkesztese-zv-report1-zv-report2-zv-report3-zv-report4">
+<h2>Záróvizsga jegyzőkönyv szerkesztése (ZV_Report1,ZV_Report2,ZV_Report3,ZV_Report4)<a class="headerlink" href="#zarovizsga-jegyzokonyv-szerkesztese-zv-report1-zv-report2-zv-report3-zv-report4" title="Permalink to this headline"></a></h2>
+<section id="elso-lap">
+<h3>Első lap<a class="headerlink" href="#elso-lap" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Zv_Report1.png" src="../_images/Zv_Report1.png" />
+</section>
+<section id="masodik-lap">
+<h3>Második lap<a class="headerlink" href="#masodik-lap" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Zv_Report2.png" src="../_images/Zv_Report2.png" />
+</section>
+<section id="harmadik-lap">
+<h3>Harmadik lap<a class="headerlink" href="#harmadik-lap" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Zv_Report3.png" src="../_images/Zv_Report3.png" />
+</section>
+<section id="negyedik-lap">
+<h3>Negyedik lap<a class="headerlink" href="#negyedik-lap" title="Permalink to this headline"></a></h3>
+<img alt="../_images/Zv_Report4.png" src="../_images/Zv_Report4.png" />
+<p>A záróvizsga jegyzőkönyv szerkesztése látható itt. Pirossal azok a részek vannak kiemelve, amelyeket módosítani lehet.</p>
+</section>
+</section>
+<section id="zarovizsga-jegyek-rogzitese-es-zarovizsga-jegyzokonyv-letoltese-zv-status">
+<h2>Záróvizsga jegyek rögzítése és Záróvizsga jegyzőkönyv letöltése (ZV_Status)<a class="headerlink" href="#zarovizsga-jegyek-rogzitese-es-zarovizsga-jegyzokonyv-letoltese-zv-status" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Zv_Status.png" src="../_images/Zv_Status.png" />
+<ul class="simple">
+<li><p>A <em>Jegyző</em> az <em>Elnök</em> és a <em>Témavezető</em> itt rögzítheti a Záróvizsgán kapott érdemjegyeket.</p></li>
+<li><p>A felhasználók innen tölthetik le a jegyzőkönyvet.</p></li>
+</ul>
+</section>
+<section id="sajat-profil-hallgato-my-profile-student">
+<h2>Saját profil [Hallgató] (My_Profile_Student)<a class="headerlink" href="#sajat-profil-hallgato-my-profile-student" title="Permalink to this headline"></a></h2>
+<img alt="../_images/My_Profile_Student.jpg" src="../_images/My_Profile_Student.jpg" />
+<p>A Hallgató saját profilja látható a megadott adatok alapján.</p>
+</section>
+<section id="sajat-profil-a-tobbi-szerepkorre-my-profile">
+<h2>Saját profil [A többi szerepkörre] (My_Profile)<a class="headerlink" href="#sajat-profil-a-tobbi-szerepkorre-my-profile" title="Permalink to this headline"></a></h2>
+<img alt="../_images/My_Profile.jpg" src="../_images/My_Profile.jpg" />
+<p>Az <em>Elnök</em>, <em>Bíráló</em>, <em>Jegyző</em>, <em>Témavezető</em> saját profilja látható a megadott adatok alapján.</p>
+</section>
+<section id="biztonsag-security">
+<h2>Biztonság (Security)<a class="headerlink" href="#biztonsag-security" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Security.jpg" src="../_images/Security.jpg" />
+<p>A jelszó változtatás itt történik meg.</p>
+</section>
+<section id="tortenetiseget-leiro-lap-hallgato-history-student">
+<h2>Történetiséget leíró lap [Hallgató] (History_Student)<a class="headerlink" href="#tortenetiseget-leiro-lap-hallgato-history-student" title="Permalink to this headline"></a></h2>
+<img alt="../_images/History_Student.jpg" src="../_images/History_Student.jpg" />
+<p>Egy történetiséget leíró lap látható, amin az egész szakdolgozat procedúra figyelhető meg.</p>
+</section>
+<section id="tortenetiseget-leiro-lap-tobbi-szerepkor-history">
+<h2>Történetiséget leíró lap [Többi szerepkör] (History)<a class="headerlink" href="#tortenetiseget-leiro-lap-tobbi-szerepkor-history" title="Permalink to this headline"></a></h2>
+<img alt="../_images/History.jpg" src="../_images/History.jpg" />
+<p>Egy történetiséget leíró lap látható, amin az egész szakdolgozat procedúra figyelhető meg.</p>
+</section>
+<section id="prezentacio-feltoltes-presentation-upload">
+<h2>Prezentáció feltöltés (Presentation_Upload)<a class="headerlink" href="#prezentacio-feltoltes-presentation-upload" title="Permalink to this headline"></a></h2>
+<img alt="../_images/Presentation_Upload.jpg" src="../_images/Presentation_Upload.jpg" />
+<p>A Záróvizsgához szükséges prezentáció feltöltés itt történik meg.</p>
+</section>
+<section id="felhasznaloi-adatok-modositasa">
+<h2>Felhasználói adatok módosítása<a class="headerlink" href="#felhasznaloi-adatok-modositasa" title="Permalink to this headline"></a></h2>
+<img alt="../_images/User_Modifiactions.png" src="../_images/User_Modifiactions.png" />
+<p>A felhasználói adatokat illetve jogosultságokat lehet módosítani ezen a lapon.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Hasznalati_esetek.html" class="btn btn-neutral float-left" title="Használati esetek" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lapok_kozotti_atmenetek.html" class="btn btn-neutral float-right" title="Lapok közötti átmenetek" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Dávid Drig.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
